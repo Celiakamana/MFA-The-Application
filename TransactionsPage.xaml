@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MFA_The_Application.TransactionsPage"
+             Title="TransactionsPage">
+
+    
+    <VerticalStackLayout Padding="20" Spacing="15">
+
+        <!-- Search Bar -->
+        <SearchBar Placeholder="Search"
+                   HorizontalOptions="FillAndExpand" />
+
+        <!-- MyQR Button and AmountBox  Layout design -->
+        <HorizontalStackLayout HorizontalOptions="FillAndExpand" Spacing="10">
+
+            <!-- Amount Entry Field -->
+            <Entry Placeholder="Enter Amount: $0.00"
+                   Keyboard="Numeric"
+                   HorizontalOptions="FillAndExpand" />
+
+            <!-- My QR Button -->
+            <Button Text="My QR"
+                    BackgroundColor="LightGray"
+                    HorizontalOptions="End"/>
+        </HorizontalStackLayout>
+
+        <!-- Transactions Action Buttons -->
+        <Grid HorizontalOptions="FillAndExpand" RowSpacing="10" ColumnSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Send/Request by Phone Button -->
+            <Button Text="Send/Request by Phone"
+                    BackgroundColor="LightGray"
+                    Grid.Row="0" Grid.Column="0"
+                    HorizontalOptions="FillAndExpand"/>
+
+            <!-- Scan/Show QR Code Button -->
+            <Button Text="Scan or Show QR Code for transaction"
+                    BackgroundColor="LightGray"
+                    Grid.Row="0" Grid.Column="1"
+                    HorizontalOptions="FillAndExpand"/>
+        </Grid>
+
+        <!-- Bottom Navigation Bar -->
+        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" HeightRequest="60">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Home Button -->
+            <Button Text="Home"
+                    BackgroundColor="LightGray"
+                    Grid.Column="0"
+                    HorizontalOptions="FillAndExpand"/>
+
+            <!-- Transactions Button -->
+            <Button Text="Transactions"
+                    BackgroundColor="LightGray"
+                    Grid.Column="1"
+                    HorizontalOptions="FillAndExpand"/>
+
+            <!-- Notifications Button -->
+            <Button Text="Notifications"
+                    BackgroundColor="LightGray"
+                    Grid.Column="2"
+                    HorizontalOptions="FillAndExpand"/>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
