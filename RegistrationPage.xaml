@@ -3,17 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MFA_The_Application.RegistrationPage"
              Title="RegistrationPage">
-    
-    <VerticalStackLayout Padding="20">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20">
 
         <!-- Back Button -->
-        <Button Text="Back"
-                HorizontalOptions="Start"
-                VerticalOptions="Start" />
+            <Button Clicked="OnBackButtonClicked">
+                <Button.ImageSource>
+                    <FontImageSource FontFamily="FASolid" Glyph="&#xf104;" Color="Black" Size="24" />
+                </Button.ImageSource>
+            </Button>
 
-        <!-- Registration Label -->
+            <!-- Registration Label -->
         <Label Text="Registration"
-               FontSize="Large"
+               FontSize="32"
                HorizontalOptions="Center"
                Margin="0,20,0,10"/>
 
@@ -64,4 +67,5 @@
                 Margin="0,20,0,0"
                 Clicked="OnRegisterButtonClicked"/>
         </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

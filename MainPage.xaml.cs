@@ -10,15 +10,21 @@ namespace MFA_The_Application
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-
+     
         public MainPage()
         {
             InitializeComponent();
         }
 
+        // for clearing password (during navigation).
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            PasswordLoginEntry.Text = string.Empty;  // Clearing the password field
+        }
+
         // This method will be executed when the 'Register' button is clicked
-        private async void OnRegisterButtonClicked(object sender, EventArgs e)
+        private async void OnRegistrationButtonClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new RegistrationPage());
         }

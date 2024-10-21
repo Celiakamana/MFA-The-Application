@@ -8,27 +8,45 @@ namespace MFA_The_Application
         {
             InitializeComponent();
         }
-        // Navigation for ALL the bottom buttons (For Sprint 2)
 
-        //private async void OnHomeButtonClicked(object sender, EventArgs e)
-        //{
-        // await Navigation.PushAsync(new HomePage());
-        //}
+        private async void OnBackButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PopAsync();
+        }
 
-        //private async void OnTransactionsButtonClicked(object sender, EventArgs e)
-        // {
-        
-        //}
+        private void OnQRCodeClicked(object sender, EventArgs e)
+        {
+            // Handle QR code click here
+        }
 
-        //private async void OnNotificationsButtonClicked(object sender, EventArgs e)
-        //{
-        // await Navigation.PushAsync(new NotificationsPage());
-        //}
+        private void OnSendButtonClicked(object sender, EventArgs e)
+        {
+            // Handle Send button click here
+        }
 
-        //  My QR code logic
-        //private async void OnMyQrButtonClicked(object sender, EventArgs e)
-        // {
-        //
-        // }
+        private void OnRequestButtonClicked(object sender, EventArgs e)
+        {
+            // Handle Request button click here
+        }
+
+        private void OnPayBillButtonClicked(object sender, EventArgs e)
+        {
+            // Handle PayBill button click here
+        }
+
+        private void OnHomeIconClicked(object sender, EventArgs e)
+        {
+            // Navigate to the home page
+        }
+
+        private void OnTransactionIconClicked(object sender, EventArgs e)
+        {
+            // Handle transaction icon click
+        }
+
+        private void OnNotificationIconClicked(object sender, EventArgs e)
+        {
+            // Handle notification icon click
+        }
     }
 }

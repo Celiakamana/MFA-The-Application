@@ -16,7 +16,7 @@ namespace MFA_The_Application
         }
 
         //Button click event
-        private async void onRegisterButtonClicked(object sender, EventArgs e)
+        private async void OnRegisterButtonClicked(object sender, EventArgs e)
         {
             //Getting input values from the Entry fields
             string phoneNumber = PhoneNumberEntry.Text;

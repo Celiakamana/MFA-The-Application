@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MFA-The Application", "MFA-The Application.csproj", "{6A1401D5-4B29-4997-BDF9-DE434257EC55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MFA-The Application", "MFA-The Application.csproj", "{6A1401D5-4B29-4997-BDF9-DE434257EC55}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C7ACC826-F50F-47DF-94A8-0349F8529576}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

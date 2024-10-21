@@ -4,14 +4,20 @@
              x:Class="MFA_The_Application.MainPage"
              Title="Login">
 
+    <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="15">
 
-            <!--Logo Image -->
+            <!--Logo Image and label -->
             <Image Source="logo.png"
                HorizontalOptions="Center"
                VerticalOptions="Start"
                HeightRequest="100" />
 
+            <Label Text="Login"
+                   FontSize="32"
+                   HorizontalOptions="Center"
+                    Margin="0,20,0,10"/>
+            
             <!-- Phone Entry -->
         <Entry x:Name="PhoneNumberLoginEntry " 
                Placeholder="Enter Phone Number"
@@ -38,8 +44,9 @@
                 VerticalOptions="EndAndExpand"
                 BackgroundColor="LightGray"
                 Margin="0,20,0,0"
-                Clicked="OnRegisterButtonClicked" />
+                Clicked="OnRegistrationButtonClicked" />
         </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
 
 
