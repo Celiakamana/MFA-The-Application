@@ -58,9 +58,9 @@
 
 	<ItemGroup>
 	  <MauiFont Include="Resources\Fonts\Font Awesome 6 Brands-Regular-400.otf" Alias="FABrands" />
-      <MauiFont Include="Resources\Fonts\Font Awesome 6 Free-Regular-400.otf" Alias="FARegular" />
-      <MauiFont Include="Resources\Fonts\Font Awesome 6 Free-Solid-900.otf" Alias="FASolid" />
-    </ItemGroup>
+          <MauiFont Include="Resources\Fonts\Font Awesome 6 Free-Regular-400.otf" Alias="FARegular" />
+          <MauiFont Include="Resources\Fonts\Font Awesome 6 Free-Solid-900.otf" Alias="FASolid" />
+        </ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
